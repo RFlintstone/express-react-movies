@@ -1,0 +1,10 @@
+{% block content %}
+    <ul>
+        {% for name in nameList %}
+            {% set url = urlList[loop.index0] %}
+                <li>
+                    <a class="nav-text" id="{{ name | replace(" ", "-") }}" href="{{ url }}">{{ name }}</a>
+                </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

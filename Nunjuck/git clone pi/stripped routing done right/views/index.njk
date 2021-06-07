@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    {% include "templates/nav.njk" %}
+    {% include "templates/header.njk" %}
+
+    <script>
+        var setActive = document.getElementById(`{{ title | replace(" ", "-") }}`);
+        setActive.classList.add("active")
+    </script>
+
+    {#    {{1 + 9}} should be 10#}
+{% endblock %}
