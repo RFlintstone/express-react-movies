@@ -1,0 +1,25 @@
+{
+  "name": "pi-web-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "movie-trailer": "^2.1.0",
+    "nunjucks": "^3.2.2",
+    "nunjucks-await-filter": "0.0.1",
+    "path": "^0.12.7",
+    "superagent": "^6.1.0",
+    "superagent-jsonapify": "^1.4.5",
+    "superagent-prefix": "0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon -e js,html,css,njk,json",
+    "start": "nodemon -e js,html,css,njk,json"
+  },
+  "author": "Ruben Flinterman",
+  "license": "ISC"
+}

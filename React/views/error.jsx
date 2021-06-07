@@ -9,7 +9,6 @@ function errorCode(props) {
                 <h2>That was a { props.request.code }.</h2>
                 <code>Request Status: { props.request.requestStatus } <br/> Error code: { props.request.code }</code>
             </div>
-            <br/><img src="img/swiper_transparent.png"/>
         </DefaultLayout>
     );
 }

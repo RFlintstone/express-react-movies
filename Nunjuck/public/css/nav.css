@@ -1,0 +1,27 @@
+.active {
+    /*color: yellow;*/
+    font-style: italic;
+}
+
+.nav-text {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    width: -webkit-fill-available;
+}
+
+li {
+    position: relative;
+    left: 70vh;
+    padding: 22px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: 18px;
+}

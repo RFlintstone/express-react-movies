@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  "pages": {
+    "1": "Home",
+    "2": "About us",
+    "3": "The team"
+  },
+  "pageURLs": {
+    "1": "/",
+    "2": "/about",
+    "3": "/team"
+  }
+}
