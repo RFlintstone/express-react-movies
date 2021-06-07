@@ -1,0 +1,12 @@
+*, html {
+    margin: 0;
+}
+
+.error {
+    font-family: Rubik;
+    font-size: 15px;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
