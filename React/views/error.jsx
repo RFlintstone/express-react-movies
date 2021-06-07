@@ -1,6 +1,8 @@
+// Requirements
 const React = require('react');
 const DefaultLayout = require('./layout');
 
+// Setup function/page
 function errorCode(props) {
     return (
         <DefaultLayout title={props.title}>
@@ -13,4 +15,5 @@ function errorCode(props) {
     );
 }
 
+// Make page available
 module.exports = errorCode;

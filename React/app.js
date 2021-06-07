@@ -41,10 +41,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/error', errorRouter);
 
+// If no programmed path is found redirect to error page
 app.use(function (req, res) {
         res.redirect("/error")
 })
-
 
 // Start express and log url + port
 app.listen(port);

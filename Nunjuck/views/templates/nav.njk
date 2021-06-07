@@ -1,5 +1,6 @@
 {% block content %}
     <ul>
+{# Loop through all NAV items and load acording URLS #}
         {% for name in nameList %}
             {% set url = urlList[loop.index0] %}
                 <li>

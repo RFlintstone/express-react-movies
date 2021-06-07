@@ -1,13 +1,16 @@
+{# Load layout template #}
 {% extends "layout.njk" %}
 
 {% block content %}
 
-    {% include "templates/nav.njk" %}
-    {% include "templates/header.njk" %}
+{# Include template blocks #}
+{% include "templates/nav.njk" %}
+{% include "templates/header.njk" %}
 
 
+{# Define and loop through output from the API #}
 {% set movies = api.imdb("Harry") | await %}
-  {% asyncAll i in movies %}
+{% asyncAll i in movies %}
 <p>Title: {{ i.title }}</p>
 <p>Year: {{ i.year }}</p>
 <p>IMDB ID: {{ i.id }}</p>
@@ -15,6 +18,7 @@
 <iframe width="180" height="150" src={{ i.trailer | dump | replace('"', "") | replace("/watch?v=", "/embed/") }}></iframe><br>
 {% endall %}
 
+{# Set active page #}
 <script>
     let setActive = document.getElementById(`{{ title | replace(" ", "-") }}`);
     setActive.classList.add("active")

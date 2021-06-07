@@ -1,5 +1,7 @@
+// Requirements
 const React = require('react');
 
+// Setup function/layout
 function DefaultLayout(props) {
     return (
         <html>
@@ -15,4 +17,5 @@ function DefaultLayout(props) {
     );
 }
 
+// Make layout available
 module.exports = DefaultLayout;

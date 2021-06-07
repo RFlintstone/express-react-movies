@@ -1,4 +1,3 @@
-
 const express = require('express');
 // https://expressjs.com/
 const path = require('path')
@@ -27,7 +26,6 @@ const env = nunjucks.configure('views', {
 });
 awaitFilter(env)
 
-
 // Set view engine so it uses nunjucks
 // https://mozilla.github.io/nunjucks/templating.html
 app.set('view engine', 'njk');
@@ -49,10 +47,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/error', errorRouter);
 
+// If no programmed path is found redirect to error page
 app.use(function (req, res) {
         res.redirect("/error")
 })
-
 
 // Start express and log url + port
 app.listen(port);
