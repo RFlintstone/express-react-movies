@@ -6,7 +6,7 @@ const movieTrailer = require('movie-trailer');
 async function imdb(search) {
     try {
         // Preparing API
-        const data = "http://www.omdbapi.com/?s=" + search + "&apikey=663f83c3";
+        const data = "http://www.omdbapi.com/?s=" + search + "&apikey=key";
         const res = await superagent.get(data);
         const body = res.body['Search'];
         const parsed = JSON.parse(JSON.stringify(body));
